@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    background-color: #ddd;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #666;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #666;
+}
+
+a:hover {
+    color: black;
+}
+
+#curriculum {
+    margin: 15px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+        "c t t"
+        "c t t"
+        "h t t"
+        "h e e"
+        "l e e"
+        "l e e";
+}
+
+.footer {
+    background-color: lightseagreen;
+    width: auto;
+    padding: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #curriculum {
+        display: block;
+    }
+}
+
+.cuadroBlanco {
+    background-color: white;
+    /* width: auto; */
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.nivelGris {
+    background-color: #999999;
+    border-radius: 16px;
+    margin: 5px;
+    width: auto;
+
+}
+
+.nivelAzul {
+    background-color: lightseagreen;
+    border-radius: 16px;
+    padding: 5px;
+    height: 20px;
+    color: white;
+}
+
+
+.centrar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#contacto {
+    grid-area: c;
+}
+
+#habilidades {
+    grid-area: h;
+}
+
+#lenguajes {
+    grid-area: l;
+
+}
+
+#trabajos {
+    grid-area: t;
+
+}
+
+#educacion {
+    grid-area: e;
+
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.azul {
+    color: lightseagreen;
+}
+
+.actual {
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.foto {
+    position: relative;
+    text-align: center;
+    color: #333;
+}
+
+.textoSobreFoto {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: white;
+    font-size: large;
+}
+
+.linea {
+    border: 0;
+    height: 4px;
+    box-shadow: inset 0 4px 4px -4px lightseagreen;
+    /* border: 0 ; border-top: 4px double lightseagreen; width: 100%; */
+}
